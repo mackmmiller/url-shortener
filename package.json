@@ -1,7 +1,9 @@
 {
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
-		"express": "^4.14.0"
+		"body-parser": "^1.18.2",
+		"express": "^4.14.0",
+		"mongoose": "^4.13.6"
 	},
 	"main": "server.js",
 	"scripts": {

@@ -5,31 +5,35 @@ body {
 	font-size: 16px;
 	color: #222;
 	background-color: #ECF0F1;
+	padding: 0 1em;
+}
+
+h1 {
 	text-align: center;
 }
 
-.container {
+.user-stories h2 {
+	text-align: center;
+}
+
+.user-stories ul li{
+	margin-left: 2em;
+}
+
+.usage {
+	display: flex;
+	justify-content: space-around;
+}
+
+.usage h2 {
+	text-align: center;
+}
+
+.usage p {
 	padding: 0;
-	margin-top: 40px;
 }
 
-.footer {
-	margin-top: 60px;
-}
-
-ol {
-	list-style-position: inside;
-}
-ul {
-	list-style-type: none;
-}
-
-a {
-	color: #2574A9;
-}
-/****** Logo Div Styling ******/
-
-img {
-	margin: 20px auto 0 auto;
-	display: block;
+.form {
+	display: flex;
+	justify-content: center;
 }
