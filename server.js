@@ -75,8 +75,9 @@ app.route('/:shortURL')
       var url = req.params.shortURL;
       Url.find({"short-url": url}, function(err, url) {
         if(err) {
-          console.log("Error:" + err);
-        } else {
+          throw err;
+        }
+        if (url && url[0]) {
           res.redirect(url[0].input);
         }
       });
