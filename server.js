@@ -75,9 +75,8 @@ app.route('/:shortURL')
       var url = req.params.shortURL;
       Url.find({"short-url": url}, function(err, url) {
         if(err) {
-          console.log(err);
+          console.log("Error:" + err);
         } else {
-          console.log(typeof url, url.length);
           res.redirect(url[0].input);
         }
       });
@@ -111,7 +110,7 @@ app.use(function(err, req, res, next) {
   }  
 });
 
-app.listen(process.env.PORT, function () {
+app.listen(process.env.PORT||3000, function () {
   console.log('Node.js listening ...');
 });
 
